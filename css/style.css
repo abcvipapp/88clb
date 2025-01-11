@@ -1,0 +1,232 @@
+.col-md-4.aside-right .app img {
+  padding: 10px 0;
+}
+.col-md-8.aside-left img {
+  animation: ani-rocket 3s linear infinite;
+  transition: 1s ease-in-out;
+  width: 90%;
+}
+.aside-right img {
+  animation: ani-zoom 0.8s linear infinite;
+}
+
+
+/* Style cho popup overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-popup-btn
+{
+    position: absolute;
+    top: -20px;
+    right: -17px;
+    background: black;
+    border: 0;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 69px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style cho popup content */
+#popup-1 .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    width: 1450px;
+position: relative;
+
+
+}
+
+.popup-content img{
+    width: 100%;
+
+}
+
+.hdpc{
+    display: none;
+}
+
+
+
+
+
+@keyframes ani-rocket {
+  0% {
+    transform: translate(0, 3%);
+  }
+  50% {
+    transform: translate(3%, 5%);
+  }
+
+  100% {
+    transform: translate(0%, 3%);
+  }
+}
+@keyframes ani-zoom {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* CSS for mobile devices */
+@media (max-width: 767px) {
+	
+		
+	  #popup-1 .popup-content .anh {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+  }
+		  #popup-1 .popup-content {
+    width: 86%;
+    padding: 10px;
+    height: 86%;
+		          
+   
+  }
+		   .hdmb{
+        display: none;
+    }
+    .hdpc {
+        display: inherit;
+    }
+	
+	
+	
+	
+	
+  .desktop {
+    display: none;
+  }
+  div#app-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .header-custom--top {
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    background: url(../images/bg_mb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .aside-right .app img {
+    width: 200px;
+  }
+  .col-md-4.aside-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .col-md-4.aside-right .app img {
+    padding: 10px 0;
+  }
+  .col-md-4.aside-right .app {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div#app-mobile .header-custom__logo img {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .header-custom--top .header-custom--left img {
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+@media (max-width: 375px) {
+	
+	  div#app-mobile {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+	
+	
+	
+  div#app-mobile .header-custom__logo img {
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+	
+	 .col-md-4.aside-right .app img {
+    padding: 5px 0;
+  }
+}
+
+
+
+/* CSS for desktop devices */
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .header-custom--top .header-custom--left img {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  body {
+    background: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .header-custom--top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .col-md-4.aside-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+	
+
+	
+	
+	
+  
+}
